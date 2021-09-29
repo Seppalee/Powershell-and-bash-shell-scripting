@@ -32,4 +32,5 @@ $namelist
 Write-Host "First name is" $namelist[0] "and the last name is" $namelist[-1]
 
 #Task05
-.\countfiles.ps1
+$a = Get-Command
+Write-Host "You got" $a.Count "applications in PowerShell"
