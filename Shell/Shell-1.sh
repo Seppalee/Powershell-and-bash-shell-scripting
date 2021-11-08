@@ -33,9 +33,11 @@ echo "copied ${filepath} to ${destination}"
 #Task05
 #!/bin/bash
 read -p "Give first filename: " file1
-read -p "Give first filename: " file2
-read -p "Give first filename: " file3
+read -p "Give second filename: " file2
+read -p "Give third filename: " file3
 
 rm /home/${USER}/${file1}
 rm /home/${USER}/${file2}
 rm /home/${USER}/${file3}
+
+echo "I deleted the following files: ${file1}, ${file2}, ${file3}"
