@@ -12,8 +12,10 @@ echo "Multiplication: $C"
 #Task02
 #!/bin/bash
 read -p "Give a new filename: " filename
+extension=${filename#*.}
+name=${filename%.*}
 now=$(date +"%Y-%m-%d")
-touch /home/${USER}/${filename}${now}
+touch /home/${USER}/${name}${now}.${extension}
 
 #Task03
 #!/bin/bash
